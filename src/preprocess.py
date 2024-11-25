@@ -70,7 +70,7 @@ class Calibrator:
         if self.sensor == "AIRS-CH0":
             signal = signal[:, :, self.cut_inf : self.cut_sup]
             dt = np.ones(len(signal)) * 0.1
-            dt[1::2] += 4.5  # @bilzard idea
+            dt[1::2] += 4.5  
             linear_corr = linear_corr[:, :, self.cut_inf : self.cut_sup]
             dark_frame = dark_frame[:, self.cut_inf : self.cut_sup]
             dead_frame = dead_frame[:, self.cut_inf : self.cut_sup]
@@ -80,7 +80,7 @@ class Calibrator:
             dt = np.ones(len(signal)) * 0.1
             dt[1::2] += 0.1
 
-        signal = signal.clip(0)  # @graySnow idea
+        signal = signal.clip(0)  
         linear_corr_signal = self._apply_linear_corr(linear_corr, signal)
         signal = self._clean_dark(linear_corr_signal, dark_frame, dt)
 
