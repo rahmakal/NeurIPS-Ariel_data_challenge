@@ -4,10 +4,10 @@ This repository contains the code for solving the Ariel Data Challenge, where th
 
 ## Project Structure
 src/  
-├── model.py        # The model used for predictions  
-├── preprocess.py   # Data preprocessing scripts  
+  ├── model.py        # The model used for predictions  
+  ├── preprocess.py   # Data preprocessing scripts  
 ├── main.py         # Main script to run the pipeline  
-├── .gitignore      # Specifies files to ignore in Git  
+
 
 ## Setup
 1/Clone the repository:
