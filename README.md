@@ -4,7 +4,7 @@ This repository contains the code for solving the Ariel Data Challenge, where th
 
 ## Project Structure
 src/  
-  &nbsp;&nbsp;&nbsp;&nbsp;├── model.py        # The model used for predictions
+  &nbsp;&nbsp;&nbsp;&nbsp;├── model.py        # The model used for predictions   
   &nbsp;&nbsp;&nbsp;&nbsp;├── preprocess.py   # Data preprocessing scripts  
 ├── main.py         # Main script to run the pipeline  
 
